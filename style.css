@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* overflow-y: hidden; */
 }
 
 .main{
@@ -104,3 +105,103 @@ body{
 .orange{
     order:-1;
 }
+
+.toggle-mode{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hr{
+    display: none;
+}
+
+@media screen and (max-width: 412px) and (min-width:300px){
+    body{
+        background-color: blueviolet;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo > h1{
+        font-size: 24px;
+    }
+
+    .hr{
+        display: block;
+        width: 80vw;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .toggle-mode{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top-cards{
+        flex-direction: column;
+    }
+
+    .top-cards > .card{
+        width: 80%;
+    }
+
+    .bottom-cards {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .bottom-cards > .card{
+        width:80%;
+    }
+}
+
+/* @media screen and (max-width: 630px){
+    body{
+        background-color: rgb(43, 226, 58);
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo > h1{
+        font-size: 24px;
+    }
+
+    .hr{
+        display: block;
+        width: 80vw;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .toggle-mode{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top-cards{
+        flex-direction: column;
+    }
+
+    .top-cards > .card{
+        width: 80%;
+    }
+
+    .bottom-cards {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .bottom-cards > .card{
+        width:80%;
+    }
+} */
